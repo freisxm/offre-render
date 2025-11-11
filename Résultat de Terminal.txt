@@ -1,0 +1,101 @@
+Last login: Tue Nov 11 12:03:56 on ttys000
+arnaudfreyeisen@macbookair-5 ~ % cd ~/Desktop/offre_render_app
+
+arnaudfreyeisen@macbookair-5 offre_render_app % pwd
+
+/Users/arnaudfreyeisen/Desktop/offre_render_app
+arnaudfreyeisen@macbookair-5 offre_render_app % python3 --version
+
+Python 3.14.0
+arnaudfreyeisen@macbookair-5 offre_render_app % python3 -m venv venv
+
+arnaudfreyeisen@macbookair-5 offre_render_app % source venv/bin/activate
+
+(venv) arnaudfreyeisen@macbookair-5 offre_render_app % pip install -r requirements.txt
+
+Collecting Flask==3.0.2 (from -r requirements.txt (line 1))
+  Downloading flask-3.0.2-py3-none-any.whl.metadata (3.6 kB)
+Collecting python-dotenv==1.0.1 (from -r requirements.txt (line 2))
+  Downloading python_dotenv-1.0.1-py3-none-any.whl.metadata (23 kB)
+Collecting Werkzeug>=3.0.0 (from Flask==3.0.2->-r requirements.txt (line 1))
+  Using cached werkzeug-3.1.3-py3-none-any.whl.metadata (3.7 kB)
+Collecting Jinja2>=3.1.2 (from Flask==3.0.2->-r requirements.txt (line 1))
+  Using cached jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+Collecting itsdangerous>=2.1.2 (from Flask==3.0.2->-r requirements.txt (line 1))
+  Using cached itsdangerous-2.2.0-py3-none-any.whl.metadata (1.9 kB)
+Collecting click>=8.1.3 (from Flask==3.0.2->-r requirements.txt (line 1))
+  Using cached click-8.3.0-py3-none-any.whl.metadata (2.6 kB)
+Collecting blinker>=1.6.2 (from Flask==3.0.2->-r requirements.txt (line 1))
+  Using cached blinker-1.9.0-py3-none-any.whl.metadata (1.6 kB)
+Collecting MarkupSafe>=2.0 (from Jinja2>=3.1.2->Flask==3.0.2->-r requirements.txt (line 1))
+  Using cached markupsafe-3.0.3-cp314-cp314-macosx_11_0_arm64.whl.metadata (2.7 kB)
+Downloading flask-3.0.2-py3-none-any.whl (101 kB)
+Downloading python_dotenv-1.0.1-py3-none-any.whl (19 kB)
+Using cached blinker-1.9.0-py3-none-any.whl (8.5 kB)
+Using cached click-8.3.0-py3-none-any.whl (107 kB)
+Using cached itsdangerous-2.2.0-py3-none-any.whl (16 kB)
+Using cached jinja2-3.1.6-py3-none-any.whl (134 kB)
+Using cached markupsafe-3.0.3-cp314-cp314-macosx_11_0_arm64.whl (12 kB)
+Using cached werkzeug-3.1.3-py3-none-any.whl (224 kB)
+Installing collected packages: python-dotenv, MarkupSafe, itsdangerous, click, blinker, Werkzeug, Jinja2, Flask
+Successfully installed Flask-3.0.2 Jinja2-3.1.6 MarkupSafe-3.0.3 Werkzeug-3.1.3 blinker-1.9.0 click-8.3.0 itsdangerous-2.2.0 python-dotenv-1.0.1
+
+[notice] A new release of pip is available: 25.2 -> 25.3
+[notice] To update, run: pip install --upgrade pip
+(venv) arnaudfreyeisen@macbookair-5 offre_render_app % pip list
+
+Package       Version
+------------- -------
+blinker       1.9.0
+click         8.3.0
+Flask         3.0.2
+itsdangerous  2.2.0
+Jinja2        3.1.6
+MarkupSafe    3.0.3
+pip           25.2
+python-dotenv 1.0.1
+Werkzeug      3.1.3
+(venv) arnaudfreyeisen@macbookair-5 offre_render_app % nano .env
+
+(venv) arnaudfreyeisen@macbookair-5 offre_render_app % python3 app.py
+
+ * Serving Flask app 'app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.100:8080
+Press CTRL+C to quit
+127.0.0.1 - - [11/Nov/2025 12:25:45] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [11/Nov/2025 12:25:45] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [11/Nov/2025 12:25:57] "POST / HTTP/1.1" 200 -
+127.0.0.1 - - [11/Nov/2025 12:26:03] "POST / HTTP/1.1" 200 -
+127.0.0.1 - - [11/Nov/2025 12:26:06] "POST / HTTP/1.1" 200 -
+nano .env
+
+
+^C%                                                                             (venv) arnaudfreyeisen@macbookair-5 offre_render_app % nano .env
+
+(venv) arnaudfreyeisen@macbookair-5 offre_render_app % python3 app.py
+
+ * Serving Flask app 'app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.1.100:8080
+Press CTRL+C to quit
+127.0.0.1 - - [11/Nov/2025 12:27:22] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [11/Nov/2025 12:27:30] "POST / HTTP/1.1" 302 -
+127.0.0.1 - - [11/Nov/2025 12:27:30] "GET /offre HTTP/1.1" 200 -
+127.0.0.1 - - [11/Nov/2025 12:27:52] "GET /logout HTTP/1.1" 302 -
+127.0.0.1 - - [11/Nov/2025 12:27:52] "GET / HTTP/1.1" 200 -
+git init
+
+git add .
+
+git commit -m "Initial commit - Offre Render Flask"
+
+git commit -m "Initial commit - Offre Render Flask"
+git commit -m "Initial commit - Offre Render Flask"
+
