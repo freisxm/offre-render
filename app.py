@@ -10,15 +10,22 @@ ACCESS_CODE = os.getenv("ACCESS_CODE", "azur2025")
 
 offer_data = {
     "Offre": "1",
-    "Actif à vendre": "Fonds et Murs",
-    "Classement": "4 étoiles",
+    "Actif à vendre": "Droits sociaux",
+    "Classement": "5 étoiles",
     "Localisation globale": "Côte d'Azur",
     "Nombre de clés": 39,
-    "CA en K€ (2024)": 5600,
-    "EBITDA en % (2024)": 32.1,
-    "RMC en € (2024)": 254,
-    "Prix en k€": 20150,
-    "Marque": "Affiliation"
+    "CA en K€ (2024)": 5600k€,
+    "EBITDA en % (2024)": 32.1%,
+    "RMC en € (2024)": 254€HT,
+    "Prix en k€": 20150k€,
+    "Marque": "Affiliation",
+    "Date limite de réception des LOI": 31/03/2026,
+    "Présentation de l'établissement ": "L'hôtel mis en vente est un établissement emblématique de la région.
+    "Il propose à sa clientèle de tourisme, un restaurant étoilé ainsi qu'un restaurant de plage et un piano bar.
+    "Chambres avec une vue mer imprenable, l'établissement propose également une plage privative.
+    "Un espace MICE permet d'acceuillir des évènement jusqu'à 600 personnes.
+    "Pic de saison en période estivale, l'hôtel propose en hors-saison des prestations tournées vers une clientèle d'affaires.
+    "L'hôtel est moderne et ne nécessite pas de rénovations lourdes permettant à l'acquéreur d'obtenir immédiatement des rendements"
 }
 
 @app.route('/', methods=['GET', 'POST'])
