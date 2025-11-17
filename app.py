@@ -20,7 +20,7 @@ offer_data = {
     "Prix en k€": "20150k€",
     "Marque": "Affiliation",
     "Date limite de réception des LOI": "31/03/2026",
-    "Présentation de l'établissement ": "L'hôtel mis en vente est un établissement emblématique de la région.":"",
+    "Présentation de l'établissement ": "L'hôtel mis en vente est un établissement emblématique de la région.",
     "Il propose à sa clientèle de tourisme, un restaurant étoilé ainsi qu'un restaurant de plage et un piano bar.":"",
     "Chambres avec une vue mer imprenable, l'établissement propose également une plage privative.":"",
     "Un espace MICE permet d'acceuillir des évènement jusqu'à 600 personnes.":"",
